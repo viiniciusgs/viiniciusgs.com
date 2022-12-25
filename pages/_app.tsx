@@ -1,8 +1,8 @@
 import localFont from '@next/font/local'
 
-import '../styles/globals.css'
-
 import type { AppProps } from 'next/app'
+
+import { globalStyles } from '../styles/globalStyles'
 
 const neutralFace = localFont({
   src: [
@@ -18,6 +18,8 @@ const neutralFace = localFont({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
+  globalStyles()
+
   return (
     <>
       <style jsx global>

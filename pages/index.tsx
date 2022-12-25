@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
+import { Container, Title, Text, Subtitle } from '../styles/pages/Home'
 
 export default function Home() {
   return (
@@ -13,11 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.h1}>Vinicius Gabriel</h1>
-        <strong className={styles.strong}>Em breve!</strong>
-        <p className={styles.p}>Web Developer</p>
-      </main>
+      <Container>
+        <Title>Vinicius Gabriel</Title>
+        <Text>Em breve!</Text>
+        <Subtitle>Web Developer</Subtitle>
+      </Container>
     </>
   )
 }
