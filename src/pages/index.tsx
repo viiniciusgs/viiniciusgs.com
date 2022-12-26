@@ -22,11 +22,11 @@ import {
 const neutralFace = localFont({
   src: [
     {
-      path: '../fonts/NeutralFace.otf',
+      path: '../../fonts/NeutralFace.otf',
       weight: '400',
     },
     {
-      path: '../fonts/NeutralFace-Bold.otf',
+      path: '../../fonts/NeutralFace-Bold.otf',
       weight: '700',
     },
   ],
