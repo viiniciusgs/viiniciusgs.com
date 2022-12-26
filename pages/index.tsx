@@ -1,6 +1,35 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import localFont from '@next/font/local'
+import {
+  LinkedInLogoIcon,
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+} from '@radix-ui/react-icons'
 
-import { Container, Title, Text, Subtitle } from '../styles/pages/Home'
+import {
+  Main,
+  Container,
+  TextBox,
+  Title,
+  Text,
+  Footer,
+  SocialMediaContainer,
+  SocialMediaButton,
+} from '../styles/pages/Home'
+
+const neutralFace = localFont({
+  src: [
+    {
+      path: '../fonts/NeutralFace.otf',
+      weight: '400',
+    },
+    {
+      path: '../fonts/NeutralFace-Bold.otf',
+      weight: '700',
+    },
+  ],
+})
 
 export default function Home() {
   return (
@@ -14,11 +43,49 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container>
-        <Title>Vinicius Gabriel</Title>
-        <Text>Em breve!</Text>
-        <Subtitle>Web Developer</Subtitle>
-      </Container>
+      <Main>
+        <Container>
+          <TextBox>
+            <Title className={neutralFace.className}>Vinicius Gabriel</Title>
+            <Text>
+              Desenvolvedor web apaixonado por criar experiências atraentes e
+              interativas.
+            </Text>
+          </TextBox>
+
+          <Footer>
+            <SocialMediaContainer>
+              <Link
+                href="https://www.linkedin.com/in/viiniciusgs/"
+                passHref
+                legacyBehavior
+              >
+                <SocialMediaButton target="_blank" rel="noreferrer">
+                  <LinkedInLogoIcon />
+                </SocialMediaButton>
+              </Link>
+              <Link
+                href="https://github.com/viiniciusgs"
+                passHref
+                legacyBehavior
+              >
+                <SocialMediaButton target="_blank" rel="noreferrer">
+                  <GitHubLogoIcon />
+                </SocialMediaButton>
+              </Link>
+              <Link
+                href="https://www.instagram.com/viiniciusgs/"
+                passHref
+                legacyBehavior
+              >
+                <SocialMediaButton target="_blank" rel="noreferrer">
+                  <InstagramLogoIcon />
+                </SocialMediaButton>
+              </Link>
+            </SocialMediaContainer>
+          </Footer>
+        </Container>
+      </Main>
     </>
   )
 }
