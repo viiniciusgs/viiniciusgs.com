@@ -1,32 +1,26 @@
-import localFont from "@next/font/local"
-import '../styles/globals.css'
+import { Anek_Latin } from '@next/font/google'
+
+import { globalStyles } from '../styles/globalStyles'
+
 import type { AppProps } from 'next/app'
 
-const neutralFace = localFont({
-  src: [
-    {
-      path: '../fonts/NeutralFace.otf',
-      weight: '400'
-    },
-    {
-      path: '../fonts/NeutralFace-Bold.otf',
-      weight: '700'
-    }
-  ]
+const anekLatin = Anek_Latin({
+  subsets: ['latin'],
 })
 
 export default function App({ Component, pageProps }: AppProps) {
+  globalStyles()
+
   return (
     <>
       <style jsx global>
         {`
           html {
-            font-family: ${neutralFace.style.fontFamily};
+            font-family: ${anekLatin.style.fontFamily};
           }
         `}
       </style>
       <Component {...pageProps} />
     </>
   )
-  
 }
