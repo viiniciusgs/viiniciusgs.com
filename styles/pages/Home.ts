@@ -4,6 +4,10 @@ export const Main = styled('main', {
   height: '100vh',
   padding: '2.5rem',
   background: '$gray02',
+
+  '@bp1': {
+    padding: '1.25rem',
+  },
 })
 
 export const Container = styled('section', {
@@ -23,6 +27,10 @@ export const TextBox = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+
+  '@bp1': {
+    width: '19rem',
+  },
 })
 
 export const Title = styled('strong', {
@@ -31,6 +39,10 @@ export const Title = styled('strong', {
   lineHeight: '100%',
   color: '$gray03',
   textAlign: 'center',
+
+  '@bp1': {
+    fontSize: '4rem',
+  },
 })
 
 export const Text = styled('strong', {
@@ -40,6 +52,10 @@ export const Text = styled('strong', {
   textAlign: 'center',
   textTransform: 'uppercase',
   marginTop: '1rem',
+
+  '@bp1': {
+    fontSize: '1rem',
+  },
 })
 
 export const Footer = styled('footer', {
