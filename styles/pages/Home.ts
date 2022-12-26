@@ -13,11 +13,11 @@ export const Main = styled('main', {
 export const Container = styled('section', {
   width: '100%',
   height: '100%',
+  padding: '2.5rem',
   borderRadius: '$radius',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'flex-end',
   background: '$gray01',
   color: '$white',
 })
@@ -27,6 +27,10 @@ export const TextBox = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
 
   '@bp1': {
     width: '19rem',
@@ -59,7 +63,10 @@ export const Text = styled('strong', {
 })
 
 export const Footer = styled('footer', {
-  marginTop: '2rem',
+  width: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
 })
 
 export const SocialMediaContainer = styled('section', {
@@ -77,4 +84,10 @@ export const SocialMediaButton = styled('a', {
     height: '1.5rem',
     color: '$gray03',
   },
+})
+
+export const Text2 = styled(Text, {
+  fontWeight: '400',
+  color: '$gray03',
+  marginTop: 'initial',
 })

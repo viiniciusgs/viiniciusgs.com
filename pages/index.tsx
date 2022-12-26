@@ -16,6 +16,7 @@ import {
   Footer,
   SocialMediaContainer,
   SocialMediaButton,
+  Text2,
 } from '../styles/pages/Home'
 
 const neutralFace = localFont({
@@ -83,6 +84,8 @@ export default function Home() {
                 </SocialMediaButton>
               </Link>
             </SocialMediaContainer>
+
+            <Text2 className={neutralFace.className}>Portfolio 2022</Text2>
           </Footer>
         </Container>
       </Main>
