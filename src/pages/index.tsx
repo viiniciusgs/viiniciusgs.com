@@ -7,6 +7,8 @@ import {
   InstagramLogoIcon,
 } from '@radix-ui/react-icons'
 
+import Menu from '../components/Menu'
+
 import {
   Main,
   Container,
@@ -45,6 +47,8 @@ export default function Home() {
       </Head>
 
       <Main>
+        <Menu />
+
         <Container>
           <TextBox>
             <Title className={neutralFace.className}>Vinicius Gabriel</Title>
