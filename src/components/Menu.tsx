@@ -1,35 +1,18 @@
+'use client'
+
 import { useState } from 'react'
 import Link from 'next/link'
-import localFont from '@next/font/local'
-
-import {
-  Container,
-  Content,
-  Title,
-  Hamburguer,
-  Links,
-  Text,
-} from '../styles/components/Menu'
-
-const neutralFace = localFont({
-  src: [
-    {
-      path: '../../fonts/NeutralFace-Bold.otf',
-      weight: '700',
-    },
-  ],
-})
 
 export default function Menu() {
   const [isActive, setIsActive] = useState(false)
 
   return (
-    <Container className={neutralFace.className}>
-      <Content>
+    <div>
+      <section>
         <Link href="/">
-          <Title>Vinicius Gabriel</Title>
+          <h1>Vinicius Gabriel</h1>
         </Link>
-        <Hamburguer
+        <button
           className={`isActive-${isActive}`}
           type="button"
           aria-label="Menu hambúrguer"
@@ -37,22 +20,22 @@ export default function Menu() {
         >
           <span />
           <span />
-        </Hamburguer>
-      </Content>
+        </button>
+      </section>
 
       {isActive && (
-        <Links>
+        <nav>
           <Link href="/">
-            <Text>Sobre</Text>
+            <p>Sobre</p>
           </Link>
           <Link href="/">
-            <Text>Projetos</Text>
+            <p>Projetos</p>
           </Link>
           <Link href="/">
-            <Text>Contato</Text>
+            <p>Contato</p>
           </Link>
-        </Links>
+        </nav>
       )}
-    </Container>
+    </div>
   )
 }
