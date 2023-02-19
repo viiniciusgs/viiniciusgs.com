@@ -5,14 +5,10 @@ import {
   InstagramLogoIcon,
 } from '@radix-ui/react-icons'
 
-import Menu from '@/components/Menu'
-
 export default function Home() {
   return (
     <>
       <main>
-        <Menu />
-
         <section>
           <section>
             <strong>Vinicius Gabriel</strong>
