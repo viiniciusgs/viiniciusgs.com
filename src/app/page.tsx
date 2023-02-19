@@ -1,6 +1,8 @@
 import { Cormorant } from '@next/font/google'
 import Link from 'next/link'
 
+import { CrossedOffText } from '@/components/CrossedOffText'
+
 const cormorant = Cormorant({
   variable: '--font-cormorant',
 })
@@ -24,7 +26,7 @@ export default function Home() {
         <p
           className={`${cormorant.variable} font-serif text-end text-9xl uppercase text-blue-600`}
         >
-          Creative
+          <CrossedOffText>Creative</CrossedOffText>
         </p>
         <p
           className={`${cormorant.variable} font-serif text-end text-9xl uppercase text-blue-600`}
