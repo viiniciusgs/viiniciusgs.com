@@ -1,4 +1,10 @@
+import { Cabin } from '@next/font/google'
+
 import '@/styles/globals.css'
+
+const cabin = Cabin({
+  variable: '--font-cabin',
+})
 
 export default function RootLayout({
   children,
@@ -6,8 +12,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
-      <body>{children}</body>
+    <html lang="en">
+      <body
+        className={`bg-zinc-100 ${cabin.variable} font-sans text-xl text-zinc-900`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
