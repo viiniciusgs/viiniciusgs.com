@@ -9,6 +9,9 @@ module.exports = {
         sans: ['var(--font-cabin)', ...fontFamily.sans],
         serif: ['var(--font-cormorant)', ...fontFamily.serif],
       },
+      screens: {
+        md: { max: '768px' },
+      },
     },
   },
   plugins: [],
