@@ -2,6 +2,7 @@ import { Cormorant } from '@next/font/google'
 import Link from 'next/link'
 
 import { CrossedOffText } from '@/components/CrossedOffText'
+import { CurrentTime } from '@/components/CurrentTime'
 
 const cormorant = Cormorant({
   variable: '--font-cormorant',
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <main className="h-screen grid grid-cols-2 grid-rows-2 p-10">
       <section className="flex gap-40 h-max">
-        <p className="uppercase">São Paulo, BR. 1:42 PM</p>
+        <CurrentTime />
         <nav className="flex gap-20">
           <Link className="uppercase underline decoration-1" href="/about">
             About
