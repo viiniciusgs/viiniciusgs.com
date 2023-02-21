@@ -11,15 +11,11 @@ const cormorant = Cormorant({
 export default function Home() {
   return (
     <main className="h-screen grid grid-cols-2 grid-rows-2 p-10 md:grid-cols-none md:grid-rows-4 md:p-5">
-      <section className="flex gap-40 h-max">
-        <CurrentTime />
-        <nav className="flex gap-20 md:hidden">
-          <Link className="uppercase underline decoration-1" href="/about">
-            About
-          </Link>
-          <Link className="uppercase underline decoration-1" href="/contact">
-            Contact
-          </Link>
+      <section className="flex gap-40 h-max uppercase font-bold">
+        <h1>Vinicius Gabriel</h1>
+        <nav className="flex gap-20 underline decoration-1 md:hidden">
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </section>
       <section className="justify-self-end text-9xl text-end uppercase md:text-5xl md:self-end md:justify-self-center md:text-start md:mb-1">
@@ -39,10 +35,7 @@ export default function Home() {
         </p>
       </section>
       <section className="flex gap-4 self-end justify-self-end uppercase font-bold">
-        <h1 className={`${cormorant.variable} font-serif `}>
-          Vinicius Gabriel
-        </h1>
-        <p>©</p>
+        <CurrentTime />
       </section>
     </main>
   )
