@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-zinc-100 ${cabin.variable} font-sans text-xl text-zinc-900 md:text-base`}
+        className={`bg-neutral-900 ${cabin.variable} font-sans text-xl text-neutral-50`}
       >
         {children}
       </body>
