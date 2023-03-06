@@ -2,23 +2,29 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { clsx } from 'clsx'
 
 export function Header() {
   const pathname = usePathname()
+
+  const textColorStyle = (page: string) => {
+    if (pathname === page) {
+      return 'text-neutral-50'
+    }
+    return 'text-neutral-400'
+  }
 
   return (
     <header className="flex flex-row justify-between">
       #
       <nav>
         <ul className="flex flex-row gap-8">
-          <li className={clsx(pathname !== '/' && 'text-neutral-400')}>
+          <li className={textColorStyle('/')}>
             <Link href="/">Home</Link>
           </li>
-          <li className={clsx(pathname !== '/about' && 'text-neutral-400')}>
+          <li className={textColorStyle('/about')}>
             <Link href="/about">About</Link>
           </li>
-          <li className={clsx(pathname !== '/contact' && 'text-neutral-400')}>
+          <li className={textColorStyle('/contact')}>
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
