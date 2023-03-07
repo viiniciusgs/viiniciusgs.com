@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-neutral-900 ${cabin.variable} font-sans text-xl text-neutral-50`}
+        className={`bg-neutral-900 ${cabin.variable} font-sans text-xl text-neutral-50 md:text-lg`}
       >
-        <main className="w-[50rem] h-screen py-12 mx-auto">
+        <main className="w-[53rem] min-h-screen p-12 mx-auto lg:w-full md:p-8">
           <Header />
           {children}
         </main>

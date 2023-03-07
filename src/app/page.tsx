@@ -2,12 +2,13 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <section className="mt-40">
-      <h1 className="text-5xl font-bold">Vinicius Gabriel</h1>
+    <section className="mt-40 md:mt-20">
+      <h1 className="text-5xl font-bold md:text-3xl">Vinicius Gabriel</h1>
       <h2 className="mt-12">
         Frontend Engineer at{' '}
         <Link
           href="http://begrowth.com.br/"
+          target="_blank"
           className="underline decoration-1 underline-offset-4"
         >
           Be Growth

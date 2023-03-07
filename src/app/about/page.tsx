@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="mt-40 pb-40">
+    <section className="mt-40 pb-40 md:mt-20 md:pb-20">
       <p>
         Hey there, welcome to my personal website! I&apos;m [Your Name] and
         I&apos;m stoked to share some stuff about me with you.

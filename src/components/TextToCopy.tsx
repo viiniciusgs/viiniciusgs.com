@@ -11,7 +11,7 @@ export function TextToCopy() {
 
   return (
     <p
-      className="mt-8 text-5xl font-bold cursor-copy"
+      className="mt-8 text-5xl font-bold cursor-copy md:text-3xl"
       onClick={copyToClipboard}
     >
       hello@viiniciusgs.com
