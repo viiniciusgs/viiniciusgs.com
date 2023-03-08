@@ -1,4 +1,4 @@
-import { Cabin } from '@next/font/google'
+import { Cabin } from 'next/font/google'
 
 import { Header } from '@/components/Header'
 
@@ -6,6 +6,7 @@ import '@/styles/globals.css'
 
 const cabin = Cabin({
   variable: '--font-cabin',
+  weight: ['400', '500', '700'],
 })
 
 export const metadata = {
@@ -13,6 +14,8 @@ export const metadata = {
     default: 'Vinicius Gabriel',
     template: '%s • Vinicius Gabriel',
   },
+  description:
+    'Passionate about building appealing and interactive web experiences.',
 }
 
 export default function RootLayout({
