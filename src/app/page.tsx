@@ -1,49 +1,29 @@
-import { Cormorant } from '@next/font/google'
 import Link from 'next/link'
-
-import { CrossedOffText } from '@/components/CrossedOffText'
-import { CurrentTime } from '@/components/CurrentTime'
-
-const cormorant = Cormorant({
-  variable: '--font-cormorant',
-})
 
 export default function Home() {
   return (
-    <main className="h-screen grid grid-cols-2 grid-rows-2 p-10 md:grid-cols-none md:grid-rows-4 md:p-5">
-      <section className="flex gap-40 h-max">
-        <CurrentTime />
-        <nav className="flex gap-20 md:hidden">
-          <Link className="uppercase underline decoration-1" href="/about">
-            About
-          </Link>
-          <Link className="uppercase underline decoration-1" href="/contact">
-            Contact
-          </Link>
-        </nav>
-      </section>
-      <section className="justify-self-end text-9xl text-end uppercase md:text-5xl md:self-end md:justify-self-center md:text-start md:mb-1">
-        <p>Hello I&apos;m a</p>
-        <p className={`${cormorant.variable} font-serif text-blue-600`}>
-          <CrossedOffText>Creative</CrossedOffText>
-        </p>
-        <p className={`${cormorant.variable} font-serif text-blue-600`}>
-          Developer
-        </p>
-      </section>
-      <section className="self-end text-9xl uppercase md:text-5xl md:self-start md:justify-self-center md:text-end md:mt-1">
-        <p>I</p>
-        <p>Develop</p>
-        <p className={`${cormorant.variable} font-serif text-blue-600`}>
-          Emotions
-        </p>
-      </section>
-      <section className="flex gap-4 self-end justify-self-end uppercase font-bold">
-        <h1 className={`${cormorant.variable} font-serif `}>
-          Vinicius Gabriel
-        </h1>
-        <p>©</p>
-      </section>
-    </main>
+    <section className="mt-40 md:mt-20">
+      <h1 className="text-5xl font-bold md:text-3xl">Vinicius Gabriel</h1>
+      <h2 className="mt-12">
+        Frontend Engineer at{' '}
+        <Link
+          href="http://begrowth.com.br/"
+          target="_blank"
+          className="underline decoration-1 underline-offset-4"
+        >
+          Be Growth
+        </Link>
+      </h2>
+      <p className="mt-4 text-neutral-400">
+        Passionate about creating compelling and interactive web experiences.
+      </p>
+      <p className="mt-8">
+        Based in{' '}
+        <span className="cursor-default pt-1 underline--magical underline--light">
+          Brazil
+        </span>
+        .
+      </p>
+    </section>
   )
 }
