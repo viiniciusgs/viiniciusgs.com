@@ -8,6 +8,13 @@ const cabin = Cabin({
   variable: '--font-cabin',
 })
 
+export const metadata = {
+  title: {
+    default: 'Vinicius Gabriel',
+    template: '%s • Vinicius Gabriel',
+  },
+}
+
 export default function RootLayout({
   children,
 }: {

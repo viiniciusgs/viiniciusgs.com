@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'About',
+}
+
 export default function About() {
   return (
     <section className="mt-40 pb-40 md:mt-20 md:pb-20">

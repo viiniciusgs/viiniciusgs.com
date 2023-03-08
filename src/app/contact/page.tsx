@@ -2,6 +2,10 @@ import Link from 'next/link'
 
 import { TextToCopy } from '@/components/TextToCopy'
 
+export const metadata = {
+  title: 'Contact',
+}
+
 export default function Contact() {
   return (
     <section className="mt-40 pb-40 text-center md:mt-20 md:pb-20">
@@ -21,7 +25,7 @@ export default function Contact() {
         <Link
           href="https://github.com/viiniciusgs/"
           target="_blank"
-          className="mt-6 text-5xl font-bold underline md:text-3xl"
+          className="text-5xl font-bold underline md:text-3xl"
         >
           GitHub
         </Link>
@@ -30,7 +34,7 @@ export default function Contact() {
         <Link
           href="https://www.instagram.com/viiniciusgs/"
           target="_blank"
-          className="mt-6 text-5xl font-bold underline md:text-3xl"
+          className="text-5xl font-bold underline md:text-3xl"
         >
           Instagram
         </Link>
