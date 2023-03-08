@@ -7,7 +7,7 @@ export default function About() {
     <section className="mt-40 pb-40 md:mt-20 md:pb-20">
       <p>
         Hey there! I&apos;m Vinicius Gabriel, I work as a Software Engineer and
-        I&apos;m passionate about creating attractive and interactive web
+        I&apos;m passionate about building appealing and interactive web
         experiences.
       </p>
       <p className="mt-8">
